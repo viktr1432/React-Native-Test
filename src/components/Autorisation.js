@@ -1,28 +1,41 @@
 import React from 'react';
-import { View, Button, Text, StyleSheet } from 'react-native'
+import { View, Button, StyleSheet } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { THEME } from '../theme';
 
-export const Autorisation = (props) => {
+export const Autorisation = ({ navigation }) => {
+    const GoToMainScreen = () => {
+        navigation.navigate('Main')
+    }
+
     return (
         <View style={styles.autorisContent}>
-            <Text style={styles.autorisTitle}>
-                Авторизация
-            </Text>
-            <Button
-                style={styles.autorisBtn}
-                title='Войти'
-                onPress={() => Alert.alert('Cannot press this one')} />
+            <TouchableOpacity activeOpacity={0.5}>
+                <View style={styles.autorisBtn}>
+                    <Button
+                        title='Войти'
+                        color={THEME.BTN_COLOR}
+                        onPress={GoToMainScreen}
+                    />
+                </View>
+            </TouchableOpacity>
         </View>
     )
 }
 
+Autorisation.navigationOptions = {
+    headerTitle: 'Авторизация',
+}
 
 const styles = StyleSheet.create({
     autorisContent: {
-
+        backgroundColor: THEME.BODY_COLOR,
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: "center",
+        paddingHorizontal: THEME.PADDING_GORIZONTAL,
     },
-    autorisTitle: {
-        color: '#fff',
-        fontSize: 25,
-        marginBottom: 20,
-    },
+    autorisBtn: {
+        width: '100%',
+    }
 })

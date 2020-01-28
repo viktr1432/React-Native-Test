@@ -1,0 +1,5 @@
+export const THEME = {
+    BTN_COLOR: '#757575',
+    BODY_COLOR: '#111111',
+    PADDING_GORIZONTAL: 10,
+}
