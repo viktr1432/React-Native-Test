@@ -14,4 +14,4 @@
 
 6.В браузере откроеться expo developer tool. Там будет штрихкод как ниже
 
-
+![screenshot of sample](https://github.com/viktr1432/React-Native-Test/blob/master/1.png)
