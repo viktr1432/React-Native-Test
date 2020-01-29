@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native'
 import { THEME } from '../theme';
-import { ThemeColors } from 'react-navigation';
 
 export class AllQuestionScreen extends Component {
     constructor(props) {
@@ -29,10 +28,6 @@ export class AllQuestionScreen extends Component {
             });
     }
 
-    _onPressButton = () => {
-        console.log('click!')
-    }
-
     render() {
         let state = this.state
 
@@ -58,7 +53,10 @@ export class AllQuestionScreen extends Component {
                                 </TouchableOpacity>
                                 <View>
                                     <TouchableOpacity
-                                        onPress={this._onPressButton}
+                                        onPress={() => {
+                                            { this.state.data.url }
+                                        }
+                                        }
                                     >
                                         <Text
                                             key={t.url}
@@ -72,22 +70,6 @@ export class AllQuestionScreen extends Component {
                 </ScrollView>
             )
         }
-        // if (state.data.url == false) {
-        //     return (
-        //         <ScrollView style={styles.content}>
-        //             <View>
-        //                 {this.state.data.map(t =>
-        //                     <TouchableOpacity>
-        //                         <Text style={styles.text}>{t.title}</Text>
-        //                     </TouchableOpacity>
-        //                 )}
-        //             </View>
-        //         </ScrollView>
-        //     )
-        // }
-
-
-
     }
 }
 

@@ -21,7 +21,6 @@ const MainNavigator = createStackNavigator(
                 backgroundColor: Platform.OS === 'android' ? THEME.HEADER_COLOR : 'fff'
             },
             headerTintColor: Platform.OS === 'android' ? '#fff' : THEME.HEADER_COLOR,
-
         }
     }
 );
