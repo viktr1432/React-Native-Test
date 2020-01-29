@@ -1,6 +1,6 @@
 ## React-Native-Test
 
 ##Setup
-git clone
+1.git clone
 
 ##
