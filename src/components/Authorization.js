@@ -3,7 +3,7 @@ import { View, Button, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { THEME } from '../theme';
 
-export const Autorisation = ({ navigation }) => {
+export const Authorization = ({ navigation }) => {
     const GoToMainScreen = () => {
         navigation.navigate('Main')
     }
@@ -14,7 +14,7 @@ export const Autorisation = ({ navigation }) => {
                 <View style={styles.autorisBtn}>
                     <Button
                         title='Войти'
-                        color={THEME.BTN_COLOR}
+                        color={THEME.AUTHOR_BTN_COLOR}
                         onPress={GoToMainScreen}
                     />
                 </View>
@@ -23,7 +23,7 @@ export const Autorisation = ({ navigation }) => {
     )
 }
 
-Autorisation.navigationOptions = {
+Authorization.navigationOptions = {
     headerTitle: 'Авторизация',
 }
 
@@ -32,10 +32,10 @@ const styles = StyleSheet.create({
         backgroundColor: THEME.BODY_COLOR,
         flex: 1,
         alignItems: 'center',
-        justifyContent: "center",
+        justifyContent: 'center',
         paddingHorizontal: THEME.PADDING_GORIZONTAL,
     },
     autorisBtn: {
-        width: '100%',
+        width: 200,
     }
 })

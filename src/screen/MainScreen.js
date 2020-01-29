@@ -1,31 +1,47 @@
-import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
-import { TouchableOpacity } from 'react-native-gesture-handler'
+import React from 'react';
+import { View, StyleSheet, Button } from 'react-native';
 
-export const MainScreen = ({navigation}) => {
+export const MainScreen = ({ navigation }) => {
     const CloseScreen = () => {
         navigation.goBack()
     }
+    const getQuestion = () => {
+        navigation.navigate('AllQuestion')
+    }
 
     return (
-        <View>
-            <TouchableOpacity
-                onPress={CloseScreen}
-            >
-                <Text style={styles.mainText}>
-                    Hello
-            </Text>
-            </TouchableOpacity>
+        <View style={styles.qustBtn}>
+            <View style={styles.button}>
+                <Button
+                    title='Список вопросов'
+                    onPress={getQuestion}
+                />
+            </View>
+            <View style={styles.button}>
+                <Button
+                    title='Выход'
+                    color='#757575'
+                    onPress={CloseScreen}
+                />
+            </View>
         </View>
     )
 }
 
 MainScreen.navigationOptions = {
-    headerTitle: '2'
+    headerTitle: 'Игра - вопрос:ответ'
 }
+
 const styles = StyleSheet.create({
-    mainText: {
-        fontSize: 25,
-        color: "red"
+    qustBtn: {
+        flex: 1,
+        alignItems: 'flex-end',
+        flexDirection: "row",
+        margin: 5,
+        justifyContent: "space-between",
+    },
+    button: {
+        width: '45%',
+        marginBottom: 10,
     }
 });
