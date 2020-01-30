@@ -5,7 +5,7 @@ export const MainScreen = ({ navigation }) => {
     const CloseScreen = () => {
         navigation.goBack()
     }
-    const getQuestion = () => {
+    const getAllQuestion = () => {
         navigation.navigate('AllQuestion')
     }
 
@@ -14,7 +14,7 @@ export const MainScreen = ({ navigation }) => {
             <View style={styles.button}>
                 <Button
                     title='Список вопросов'
-                    onPress={getQuestion}
+                    onPress={getAllQuestion}
                 />
             </View>
             <View style={styles.button}>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native'
 import { THEME } from '../theme';
 
+
 export class AllQuestionScreen extends Component {
     constructor(props) {
         super(props);
@@ -53,10 +54,7 @@ export class AllQuestionScreen extends Component {
                                 </TouchableOpacity>
                                 <View>
                                     <TouchableOpacity
-                                        onPress={() => {
-                                            { this.state.data.url }
-                                        }
-                                        }
+                                        onPress={() => this._onPress(url)}
                                     >
                                         <Text
                                             key={t.url}

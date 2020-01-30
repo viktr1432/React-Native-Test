@@ -4234,6 +4234,16 @@ react-native-view-shot@3.0.2:
   resolved "https://registry.yarnpkg.com/react-native-view-shot/-/react-native-view-shot-3.0.2.tgz#daccaec5b8038a680b17533ff7e72876e68c7d0d"
   integrity sha512-JZOkGo2jzSX2b7N6N2uDr0wQjSz+QmBtY8jzeo0XJY6bLOfaY5nmWyYxDmDRoSpKiFkGTCkyhUqNnjo6lXOtEw==
 
+react-native-vkontakte-login@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-vkontakte-login/-/react-native-vkontakte-login-1.0.0.tgz#c53a09b9bdf1f0566bd850c5a39341e5e9906cf1"
+  integrity sha512-7+BkTjW2ad+q7rNNQ5hRCY5Iihiwc8ZQmFzcCTIl6/zGYN4jxh3OyoTRK9L6VxY9eqHWNVc75mCm0YAgljjUlQ==
+
+react-native-vksdk@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-vksdk/-/react-native-vksdk-0.0.3.tgz#dbd3661ae8f34e8ac5fed56eb333e72852c97e1d"
+  integrity sha1-29NmGujzTorF/tVuszPnKFLJfh0=
+
 react-native-web@~0.11.7:
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.11.7.tgz#d173d5a9b58db23b6d442c4bc4c81e9939adac23"
